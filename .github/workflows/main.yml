@@ -16,7 +16,7 @@ jobs:
     - name: Copy files to server
       uses: appleboy/scp-action@v0.1.6
       with:
-        host: "${{ secrets.SSH_HOST }}]"  # Correctly formatted for IPv6
+        host: "${{ secrets.SSH_HOST }}"  # Correctly formatted for IPv6
         username: ${{ secrets.SSH_USERNAME }}  # Your server username
         password: ${{ secrets.SSH_PASSWORD }}  # Your server password
         source: "index.php"
